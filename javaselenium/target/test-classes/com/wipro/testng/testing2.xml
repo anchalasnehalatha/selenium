@@ -1,0 +1,17 @@
+<suite name="functionaltesting" verbose="1">
+  
+  <test name="sanity and regresssion testings">
+    <groups>
+      <run>
+        
+        
+         <include name="Smoke"/>
+         <include name="Sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.wipro.labsession_16.TestNGTestcases2"/>
+    </classes>
+  </test>
+
+</suite>

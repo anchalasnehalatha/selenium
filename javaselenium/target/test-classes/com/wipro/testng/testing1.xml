@@ -1,0 +1,14 @@
+<suite name="functionaltesting" verbose="1">
+  
+  <test name="functionaltestcases">
+    <groups>
+      <run>
+        <include name="Sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.wipro.testng.TestNGTestcases"/>
+    </classes>
+  </test>
+
+</suite>

@@ -1,0 +1,16 @@
+<suite name="functionaltesting" verbose="1">
+
+   <test name="functionaltestcases">
+      <groups>
+         <run>
+            <include name="Sanity"/>
+            <include name="Regression"/>
+         </run>
+      </groups>
+
+      <classes>
+         <class name="com.wipro.labsesssion_18testng.formfilling"/>
+      </classes>
+   </test>
+
+</suite>

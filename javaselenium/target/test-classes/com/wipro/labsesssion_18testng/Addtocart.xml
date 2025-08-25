@@ -1,0 +1,17 @@
+<suite name="functionaltesting" verbose="1">
+  
+  <test name="functionaltestcases">
+   <parameter name="Cart"  value="Electronics"/>
+    <groups>
+  <run>
+  <include name="Sanity"></include>
+  <include name="Regression"></include>
+  </run>
+  </groups>
+    
+    <classes>
+      <class name="com.wipro.labsesson_18testng.Addtocart"/>
+    </classes>
+  </test>
+
+</suite>

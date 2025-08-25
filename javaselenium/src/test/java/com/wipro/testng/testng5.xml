@@ -1,0 +1,10 @@
+<suite name="functionaltesting" verbose="1">
+  
+  <test name="sanity and regresssion testings">
+    
+    <classes>
+      <class name="com.wipro.testng.TestNGdependency"/>
+    </classes>
+  </test>
+
+</suite>

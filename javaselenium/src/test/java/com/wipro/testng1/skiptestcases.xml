@@ -1,0 +1,9 @@
+<suite name="Functional" verbose="1">
+<test name="FunctionalTestCases">
+<classes>
+       	<class name="com.wipro.testng.TestNGSkiptestcases"></class>
+       	</classes>
+    
+  </test>
+  
+</suite>

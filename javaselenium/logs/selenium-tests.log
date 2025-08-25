@@ -1,0 +1,15 @@
+2025-08-20 10:42:44 [main] INFO  Testngtestcase - Starting login test...
+2025-08-20 10:42:58 [main] INFO  Testngtestcase - Opened browser and navigated to saucedemo
+2025-08-20 10:43:00 [main] INFO  Testngtestcase - Entered username
+2025-08-20 10:43:03 [main] INFO  Testngtestcase - Entered password
+2025-08-20 10:43:05 [main] INFO  Testngtestcase - Clicked login button
+2025-08-20 10:43:07 [main] INFO  Testngtestcase - Browser closed
+2025-08-20 12:04:58 [main] INFO  testdatafetchsql - Invoking the browser
+2025-08-20 12:04:58 [main] INFO  testdatafetchsql - Entering the username
+2025-08-20 12:05:02 [main] INFO  testdatafetchsql - Entering the password
+2025-08-20 12:05:18 [main] INFO  testdatafetchsql - Invoking the browser
+2025-08-20 12:05:18 [main] INFO  testdatafetchsql - Entering the username
+2025-08-20 12:05:22 [main] INFO  testdatafetchsql - Entering the password
+2025-08-20 12:05:35 [main] INFO  testdatafetchsql - Invoking the browser
+2025-08-20 12:05:35 [main] INFO  testdatafetchsql - Entering the username
+2025-08-20 12:05:40 [main] INFO  testdatafetchsql - Entering the password
