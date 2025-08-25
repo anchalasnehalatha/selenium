@@ -1,4 +1,4 @@
-package com.wipro.Grid;
+/*package com.wipro.Grid;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -48,4 +48,4 @@ public class HelperClass {
             driver.remove();
         }
     }
-}
+}*/
