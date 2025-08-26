@@ -17,6 +17,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.jupiter.version>5.9.3</junit.jupiter.version>
         <selenium.version>4.19.1</selenium.version>
+        <testng.version>7.10.2</testng.version>
     </properties>
 
     <dependencies>
@@ -28,6 +29,14 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- ✅ TestNG -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>test</scope>
+        </dependency>
+
         <!-- ✅ Selenium -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -35,17 +44,29 @@
             <version>${selenium.version}</version>
         </dependency>
 
-        <!-- ✅ WebDriverManager (auto handles drivers like Chrome/Firefox) -->
+        <!-- ✅ WebDriverManager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
             <version>5.8.0</version>
         </dependency>
+
+        <!-- ✅ Log4j (your error shows missing logging) -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.20.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.20.0</version>
+        </dependency>
     </dependencies>
 
     <build>
         <plugins>
-            <!-- ✅ Compiler -->
+            <!-- Compiler -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -56,7 +77,7 @@
                 </configuration>
             </plugin>
 
-            <!-- ✅ Surefire plugin (runs JUnit 5 tests) -->
+            <!-- Surefire (runs JUnit + TestNG tests) -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -64,10 +85,11 @@
                 <configuration>
                     <includes>
                         <include>**/*Test.java</include>
+                        <include>**/*Tests.java</include>
+                        <include>**/*TestCase.java</include>
                     </includes>
                 </configuration>
             </plugin>
         </plugins>
     </build>
 </project>
-
